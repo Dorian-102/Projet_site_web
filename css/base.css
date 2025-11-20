@@ -1,0 +1,37 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 120vh;
+}
+
+
+
+header {
+    height: 120vh ;
+    width: 100vw ;
+    overflow: hidden ;
+    display: grid;
+    grid-template-rows: 1fr 4fr 0.5fr;
+    gap: 0;
+    grid-template-areas:
+    "headerall"
+    "content"
+    "footer";
+}
+
+.content {
+    grid-area: content;
+    background-color: #18c753;
+}
+
+.headerall {
+    grid-area: headerall;
+    background-color: #6ca5df;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #F54927;
+}
+
+header {border-left: 8px solid #da53ad;}
