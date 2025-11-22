@@ -11,12 +11,21 @@ header {
     width: 100vw ;
     overflow: hidden ;
     display: grid;
-    grid-template-rows: 1fr 4fr 0.4fr;
+    grid-template-rows: minmax(0, 0.5fr) 4fr 0.2fr;
     gap: 0;
     grid-template-areas:
     "headerall"
     "content"
     "footer";
+}
+
+.headerall img {
+    max-height: 75%; 
+    max-width: 75%; 
+    height: auto; 
+    width: auto;
+    display: block;
+    margin: 0 ;
 }
 
 .content {
@@ -29,9 +38,14 @@ header {
     background-color: #6ca5df;
 }
 
+header nav ul {
+    display: flex ;
+    gap: 1.5rem ;
+    align-items: center ;
+    width: 60%
+}
+
 .footer {
     grid-area: footer;
     background-color: #F54927;
 }
-
-header {border-left: 8px solid #da53ad;}
