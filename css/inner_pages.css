@@ -1,17 +1,17 @@
 html, body{
     margin: 0;
     padding: 0;
-    height: 120vh;
+    height: 200vh;
 }
 
 
 
 header {
-    height: 120vh ;
+    height: 200vh ;
     width: 100vw ;
     overflow: hidden ;
     display: grid;
-    grid-template-rows: 1fr 4fr 0.5fr;
+    grid-template-rows: 1fr 4fr 0.4fr;
     gap: 0;
     grid-template-areas:
     "headerall"
