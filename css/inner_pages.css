@@ -4,8 +4,6 @@ html, body{
     height: 200vh;
 }
 
-
-
 header {
     height: 200vh ;
     width: 100vw ;
@@ -19,6 +17,19 @@ header {
     "footer";
 }
 
+.headerall {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+    padding: 0 30px;
+    grid-area: headerall;
+    background-image: url("../pics/mur_eco_5.png");
+    background-repeat: no-repeat;
+    background-size: 2000px 500px;
+    background-position: center;
+    border-bottom: 6px solid black;
+}
+
 .headerall img {
     max-height: 75%; 
     max-width: 75%; 
@@ -28,16 +39,6 @@ header {
     margin: 0 ;
 }
 
-.content {
-    grid-area: content;
-    background-color: #18c753;
-}
-
-.headerall {
-    grid-area: headerall;
-    background-color: #6ca5df;
-}
-
 header nav ul {
     display: flex ;
     gap: 1.5rem ;
@@ -45,7 +46,57 @@ header nav ul {
     width: 60%
 }
 
-.footer {
-    grid-area: footer;
-    background-color: #F54927;
+header nav ul li {
+    padding: 0.5rem ;
+    list-style: none ;
 }
+
+header nav ul li a{
+    white-space: nowrap;
+    background-color: rgb(12, 54, 116);
+    border: 2px solid black;
+    color: rgba(255, 255, 255, 0.964) ;
+    border-radius: 40px;
+    font-size: 2.5vh ;
+    cursor: pointer;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+}
+
+header nav ul li a:hover{
+    background-color: rgba(2, 2, 32, 0.933);
+    color: rgba(255, 255, 255, 0.896) ;
+}
+
+.navbtn{
+    position: relative;
+    display: inline-block;
+}
+
+.hover-gif {
+    position: absolute; 
+    bottom: 117%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px; 
+    height: auto;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
+    pointer-events: none; 
+}
+
+.navbtn:hover .hover-gif {
+    opacity: 1;
+    visibility: visible; 
+}
+
+.content {
+    grid-area: content;
+    background-image: url("../pics/fond_gaming2.jpg");
+    background-repeat: no-repeat;
+    background-size: 3000px 2000px;
+    background-position: center;
+}
+
