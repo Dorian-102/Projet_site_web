@@ -94,5 +94,26 @@ header nav ul li a:hover{
 
 
 
+.navbtn{
+    position: relative;
+    display: inline-block;
+}
+
+.hover-gif {
+    position: absolute; 
+    bottom: 117%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px; 
+    height: auto;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
+    pointer-events: none; 
+}
 
 
+.navbtn:hover .hover-gif {
+    opacity: 1;
+    visibility: visible; 
+}
