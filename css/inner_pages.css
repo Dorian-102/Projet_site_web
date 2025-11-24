@@ -1,0 +1,71 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 200vh;
+}
+
+header {
+    height: 200vh ;
+    width: 100vw ;
+    overflow: hidden ;
+    display: grid;
+    grid-template-rows: minmax(0, 0.5fr) 4fr 0.2fr;
+    gap: 0;
+    grid-template-areas:
+    "headerall"
+    "content"
+    "footer";
+}
+
+.title {
+    position: relative;
+    padding-bottom: 5px; /* Optionnel: Espace entre le texte et les lignes */
+}
+
+.title::before {
+    content: "";
+    position: absolute;
+    bottom: 2px; /* Positionnement: 5px sous le texte */
+    left: 0;
+    
+    width: 100%; /* Cette ligne prend toute la largeur du titre */
+    height: 5px; /* Épaisseur de la première ligne */
+    background-color: rgb(43, 139, 212); /* Couleur de la première ligne */
+}
+
+.title::after {
+    content: "";
+    position: absolute;
+    bottom: -5px; /* Positionnement: 0px sous le texte (donc sous la première ligne) */
+    left: 0;
+    
+    width: 70%; /* Cette ligne est plus courte, 70% de la largeur du titre */
+    height: 4.5px; /* Épaisseur plus fine */
+    background-color: rgb(43, 139, 212, 0.6); /* Couleur de la première ligne */
+    
+    /* Optionnel: Centrer cette ligne plus courte si vous le souhaitez */
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
+}
+
+.home{
+    width: 4.5vh; 
+    height: 4.5vh;
+}
+
+.content {
+    grid-area: content;
+    background-image: url("../pics/fond_gaming2.jpg");
+    background-repeat: no-repeat;
+    background-size: 3000px 2000px;
+    /* Utilisez 'cover' pour remplir toute la zone sans déformation */
+    background-size: cover;
+    background-position: top;
+}
+
+
+
+
+
+
+
