@@ -15,7 +15,8 @@
 
 .logo {
     max-height: 75%; 
-    max-width: 75%; 
+    max-width: 75%;
+    padding: 30px; 
     height: auto; 
     width: auto;
     display: block;
@@ -25,20 +26,21 @@
 .insta-group {
     display: flex;
     align-items: center;
-    gap: 1vh;
+    gap: 1rem;
     text-decoration: none;
 }
 
 .insta{
-    width: 7vh; 
-    height: 7vh;
+    width: 4vw; 
+    height: 4vw;
 }
 
 .title {
-    font-size: 3rem; 
+    font-size: 2.5vw; 
     font-weight: 900;
     font-family: 'Montserrat', sans-serif;
     color: rgba(255, 255, 255, 0.964) ;
+    white-space: nowrap;
     margin: 0;
 }
 
@@ -59,18 +61,17 @@ header nav ul li a{
     align-items: center;
     background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
     border: 0;
-    border-radius: 8px;
-    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    border-radius: 0.4vw;
     box-sizing: border-box;
     color: #FFFFFF;
     display: flex;
     font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
+    font-size: 1.2rem;
     justify-content: center;
     line-height: 1em;
     max-width: 100%;
-    min-width: 110px;
-    padding: 3px;
+    min-width: 50%;
+    padding: 0.2vw;
     text-decoration: none;
     user-select: none;
     -webkit-user-select: none;
@@ -79,6 +80,9 @@ header nav ul li a{
     cursor: pointer;
 }
 
+.text{
+    font-size: 1vw;
+}
 
 .navbtn{
     position: relative;
