@@ -4,25 +4,17 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    height: 100%;
     position: relative;
 }
 
 .content #list_investor {
     height: 6% ;
     width: 80% ;
-    margin-bottom: 4vh;
-    margin-top: 4vh;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
-}
-
-#button {
-    height: 80%;
-    width: 18%;
-    border-radius: 0.4vw;
-    
 }
 
 .glow-on-hover {
@@ -87,21 +79,38 @@
 }
 
 .content #explications_investor{
-    position: absolute;
     height: 70% ;
     width: 80% ;
     background-color: rgba(73, 226, 56, 0.5);
 }
 
-#photo_exp {
-    width: 40vh;
+#photo_exp_b {
+    width: 30vh;
     height: auto;
 }
 
+#photo_exp {
+    width: 38vh;
+    height: auto;
+}
+
+#box_vide {
+    position: relative;
+    height: auto ;
+    width: 100% ;
+    background-color: rgba(27, 23, 75, 0.8);
+    margin-bottom: 2vh; 
+    display: flex;         
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 2vh; 
+    padding-bottom: 2vh;
+    border-color: #fff;
+}
 
 #box_exp1, #box_exp2, #box_exp3 {
     position: relative;
-    height: 33% ;
+    height: auto ;
     width: 100% ;
     background-color: #00ffd5;
     margin-bottom: 2vh; 
