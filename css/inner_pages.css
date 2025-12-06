@@ -19,33 +19,28 @@ header {
 
 .title {
     position: relative;
-    padding-bottom: 5px; /* Optionnel: Espace entre le texte et les lignes */
+    padding-bottom: 5px;
 }
 
 .title::before {
     content: "";
     position: absolute;
-    bottom: 2px; /* Positionnement: 5px sous le texte */
+    bottom: 2px;
     left: 0;
     
-    width: 100%; /* Cette ligne prend toute la largeur du titre */
-    height: 5px; /* Épaisseur de la première ligne */
-    background-color: rgb(43, 139, 212); /* Couleur de la première ligne */
+    width: 100%;
+    height: 5px;
+    background-color: rgb(43, 139, 212);
 }
 
 .title::after {
     content: "";
     position: absolute;
-    bottom: -5px; /* Positionnement: 0px sous le texte (donc sous la première ligne) */
+    bottom: -5px;
     left: 0;
-    
-    width: 70%; /* Cette ligne est plus courte, 70% de la largeur du titre */
-    height: 4.5px; /* Épaisseur plus fine */
-    background-color: rgb(43, 139, 212, 0.6); /* Couleur de la première ligne */
-    
-    /* Optionnel: Centrer cette ligne plus courte si vous le souhaitez */
-    /* left: 50%; */
-    /* transform: translateX(-50%); */
+    width: 70%;
+    height: 4.5px;
+    background-color: rgb(43, 139, 212, 0.6);
 }
 
 .home{
@@ -58,14 +53,8 @@ header {
     background-image: url("../pics/fond_gaming2.jpg");
     background-repeat: no-repeat;
     background-size: 3000px 2000px;
-    /* Utilisez 'cover' pour remplir toute la zone sans déformation */
     background-size: cover;
     background-position: top;
 }
-
-
-
-
-
 
 
