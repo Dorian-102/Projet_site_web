@@ -1,0 +1,46 @@
+.content {
+    grid-area: content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    width: 100%;
+}
+
+#grid-places {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 80vw;
+    height: 70vh;
+    gap: 8vh; 
+    padding: 20px;
+    margin: 6vh 4vw 0;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #303030; 
+    border: 1px solid #ffffff;
+    padding: 10px;
+}
+
+.photo-place {
+    width: 90%;
+    max-height: 70%; 
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.description {
+    width: 90%;
+    text-align: center;
+    color: white;
+    font-size: 1.2vw;
+    flex-grow: 1;
+    margin: 0;
+}

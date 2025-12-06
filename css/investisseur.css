@@ -66,22 +66,19 @@
     100% { background-position: 0 0; }
 }
 
-/* --- DEBUT DES MODIFICATIONS POUR LE GLISSEMENT --- */
-
 .content #explications_investor{
-    position: relative; /* Référentiel pour le positionnement absolu des boîtes */
+    position: relative;
     height: 80% ;
     width: 80% ;
     background-color: rgba(56, 195, 226, 0.5);
-    overflow: hidden; /* Assure que le glissement se fait à l'intérieur de la zone */
+    overflow: hidden;
 }
 
-/* Styles communs pour le mouvement des boîtes */
 #box_vide, #box_exp1, #box_exp2, #box_exp3 {
-    position: absolute; /* Permet d'utiliser 'top' pour le glissement */
+    position: absolute;
     left: 0;
     width: 100%;
-    transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1); /* Le glissement fluide */
+    transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1);
     display: flex;            
     align-items: center;
     justify-content: flex-start;
@@ -90,29 +87,27 @@
     box-sizing: border-box;
 }
 
-/* 1. Positions de DÉPART (Simulent l'alignement vertical) */
-
 #box_vide {
-    top: 0; /* Première position, le point d'arrivée */
+    top: 0;
     height: 25% ;
-    background-color: rgba(27, 23, 75, 0.8);
+    background-color: rgba(38, 35, 73, 0.8);
     z-index: 1;
 }
 
 #box_exp1 {
-    top: 27%; /* 25% (hauteur box_vide) + 2% (margin-bottom approximative) */
+    top: 27%;
     height: auto ;
     z-index: 2;
 }
 
 #box_exp2 {
-    top: 50%; /* Estimation pour être sous box_exp1. Ajustez si nécessaire */
+    top: 50%;
     height: auto ;
     z-index: 3;
 }
 
 #box_exp3 {
-    top: 75%; /* Estimation pour être sous box_exp2. Ajustez si nécessaire */
+    top: 75%;
     height: auto ;
     z-index: 4;
 }
