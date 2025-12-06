@@ -9,7 +9,7 @@ header {
     width: 100vw ;
     overflow: hidden ;
     display: grid;
-    grid-template-rows: minmax(0, 0.5fr) 4fr 0.2fr;
+    grid-template-rows: minmax(0, 0.5fr) 4fr;
     gap: 0;
     grid-template-areas:
     "headerall"

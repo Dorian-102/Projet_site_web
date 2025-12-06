@@ -7,28 +7,23 @@
     position: relative;
 }
 
-.content #list_investor {
-    height: 6% ;
-    width: 80% ;
-    margin-bottom: 2vh;
-    margin-top: 2vh;
-    display: flex;
+.glow-on-hover {
+    width: 11vw;
+    height: 6vh;
+    margin: 5vh 5vw;
+    display: inline-block;
     align-items: center;
     justify-content: space-around;
-}
-
-.glow-on-hover {
-    font-size: 1.2vw;
-    width: 220px;
-    height: 50px;
+    flex-direction: row;
     border: none;
     outline: none;
     color: #fff;
     background: #111;
+    font-size: 1.2vw;
     cursor: pointer;
     position: relative;
-    z-index: 0;
     border-radius: 10px;
+    z-index: 0;
 }
 
 .glow-on-hover:before {
@@ -48,13 +43,6 @@
     border-radius: 10px;
 }
 
-.glow-on-hover:active {
-    color: #000
-}
-
-.glow-on-hover:active:after {
-    background: transparent;
-}
 
 .glow-on-hover:hover:before {
     opacity: 1;
@@ -78,49 +66,99 @@
     100% { background-position: 0 0; }
 }
 
+/* --- DEBUT DES MODIFICATIONS POUR LE GLISSEMENT --- */
+
 .content #explications_investor{
-    height: 70% ;
+    position: relative; /* Référentiel pour le positionnement absolu des boîtes */
+    height: 80% ;
     width: 80% ;
-    background-color: rgba(73, 226, 56, 0.5);
+    background-color: rgba(56, 195, 226, 0.5);
+    overflow: hidden; /* Assure que le glissement se fait à l'intérieur de la zone */
+}
+
+/* Styles communs pour le mouvement des boîtes */
+#box_vide, #box_exp1, #box_exp2, #box_exp3 {
+    position: absolute; /* Permet d'utiliser 'top' pour le glissement */
+    left: 0;
+    width: 100%;
+    transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1); /* Le glissement fluide */
+    display: flex;            
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    box-sizing: border-box;
+}
+
+/* 1. Positions de DÉPART (Simulent l'alignement vertical) */
+
+#box_vide {
+    top: 0; /* Première position, le point d'arrivée */
+    height: 25% ;
+    background-color: rgba(27, 23, 75, 0.8);
+    z-index: 1;
+}
+
+#box_exp1 {
+    top: 27%; /* 25% (hauteur box_vide) + 2% (margin-bottom approximative) */
+    height: auto ;
+    z-index: 2;
+}
+
+#box_exp2 {
+    top: 50%; /* Estimation pour être sous box_exp1. Ajustez si nécessaire */
+    height: auto ;
+    z-index: 3;
+}
+
+#box_exp3 {
+    top: 75%; /* Estimation pour être sous box_exp2. Ajustez si nécessaire */
+    height: auto ;
+    z-index: 4;
+}
+
+.content:has(.btn1:hover) #box_exp1 {
+    top: 0 ;
+    z-index: 100;
+}
+
+.content:has(.btn1:hover) #box_exp2 {
+    top: 27% ;
+    z-index: 100;
+}
+
+.content:has(.btn1:hover) #box_exp3 {
+    top: 50% ;
+    z-index: 100;
+}
+
+.content:has(.btn2:hover) #box_exp2 {
+    top: 0 ;
+    z-index: 100;
+}
+
+.content:has(.btn2:hover) #box_exp3 {
+    top: 50%;
+    z-index: 100;
+}
+
+
+.content:has(.btn3:hover) #box_exp3 {
+    top: 0 ;
+    z-index: 100;
 }
 
 #photo_exp_b {
     width: 30vh;
     height: auto;
+    margin-left: 1.5vw;
 }
 
 #photo_exp {
     width: 38vh;
     height: auto;
+    margin-left: 1.5vw;
 }
-
-#box_vide {
-    position: relative;
-    height: auto ;
-    width: 100% ;
-    background-color: rgba(27, 23, 75, 0.8);
-    margin-bottom: 2vh; 
-    display: flex;         
-    align-items: center;
-    justify-content: flex-start;
-    padding-top: 2vh; 
-    padding-bottom: 2vh;
-    border-color: #fff;
-}
-
-#box_exp1, #box_exp2, #box_exp3 {
-    position: relative;
-    height: auto ;
-    width: 100% ;
-    background-color: #00ffd5;
-    margin-bottom: 2vh; 
-    display: flex;         
-    align-items: center;
-    justify-content: flex-start;
-    padding-top: 2vh; 
-    padding-bottom: 2vh;
-}
-
 
 #text {
     color: #fff;
