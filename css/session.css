@@ -16,26 +16,30 @@
 #title {
     color: #fff;
     font-size: 1.8vw;
-    padding-left: 3vw;
-    margin-bottom: 2vh;
+    padding-left: 1.5vw;
+    margin-bottom: 1.5vh;
+    margin-top: 6vh;
+}
+
+#texte, #icone {
+    color: #ffffff;
 }
 
 #texte {
-    color: #fff;
     font-size: 1.5vw;
-    padding-left: 3vw;
-    margin-bottom: 8vh;
+    margin-right: 1.5vw;
+    margin-left: 1.5vw;
 }
 
 #icone {
-    color: #ffffff;
     font-size: 4vh;
-    margin-right: -2vw;
+    margin-top: 4VH;
 }
+
 
 .content #texte_sessions{
     position: relative;
-    height: 65% ;
+    height: 58% ;
     width: 80% ;
     background-color: rgba(22, 77, 90, 0.5);
     overflow: hidden;
