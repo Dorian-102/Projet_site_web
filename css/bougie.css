@@ -57,7 +57,7 @@
 #box_vide {
     top: 35%;
     width: 75%;
-    height: 22%;
+    height: 20%;
     opacity: 0.5;
     position: absolute; 
     background-color: #16141b;
@@ -68,7 +68,7 @@
     position: absolute;
     top: 35%;
     width: 75%;
-    height: 22%;
+    height: 20%;
     opacity: 0;
     background-color: #16141b;
     border: 1px solid #6a6666;
@@ -80,22 +80,31 @@
     z-index: 10;
 }
 
-/* Lier le survol de l'image Doji à l'affichage de l'explication Doji */
 #doji_ph:hover ~ #doji_exp {
     opacity: 1;
 }
 
-/* Lier le survol de l'image Étoile Filante à l'affichage de l'explication Étoile Filante */
 #étoile_filante_ph:hover ~ #étoile_filante_exp {
     opacity: 1;
 }
 
-/* Lier le survol de l'image Étoile du Matin à l'affichage de l'explication Étoile du Matin */
 #étoile_du_matin_ph:hover ~ #étoile_du_matin_exp {
     opacity: 1;
 }
 
-/* Lier le survol de l'image Marteau à l'affichage de l'explication Marteau */
 #marteau_ph:hover ~ #marteau_exp {
     opacity: 1;
+}
+
+#title {
+    color: #fff;
+    font-size: 1.8vw;
+    padding-left: 3vw;
+    margin-bottom: 2vh;
+}
+
+#texte {
+    color: #fff;
+    font-size: 1.5vw;
+    padding-left: 3vw;
 }
