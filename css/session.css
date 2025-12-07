@@ -1,0 +1,40 @@
+.content {
+    grid-area: content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    width: 100%;
+}
+
+#img_sessions {
+    margin: 4vh;
+    width: 38vw;
+}
+
+#text {
+    color: #fff;
+    font-size: 1.5vw;
+    padding-left: 3vw;
+}
+
+.fa-earth-europe {
+    color: #ffffff;
+    font-size: 2.5em;
+}
+
+.content #texte_sessions{
+    position: relative;
+    height: 65% ;
+    width: 80% ;
+    background-color: rgba(22, 77, 90, 0.5);
+    overflow: hidden;
+    padding: 2%;
+}
+
+.titre-icone-wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+}
