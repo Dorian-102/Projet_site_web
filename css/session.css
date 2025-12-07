@@ -13,15 +13,24 @@
     width: 38vw;
 }
 
+#title {
+    color: #fff;
+    font-size: 1.8vw;
+    padding-left: 3vw;
+    margin-bottom: 2vh;
+}
+
 #text {
     color: #fff;
     font-size: 1.5vw;
     padding-left: 3vw;
+    margin-bottom: 8vh;
 }
 
-.fa-earth-europe {
+#icone {
     color: #ffffff;
-    font-size: 2.5em;
+    font-size: 4vh;
+    margin-right: -2vw;
 }
 
 .content #texte_sessions{
