@@ -1,0 +1,34 @@
+.content {
+    grid-area: content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+}
+
+#bullish {
+    top: 3%;
+    width: 80%;
+    height: auto; 
+    opacity: 1;
+    position: absolute; 
+    background-color: #020202;
+    z-index: 1;
+    padding: 1% 1% 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap; 
+}
+
+#img {
+    height: 15vh;
+    width: auto; 
+    flex-shrink: 1;
+    padding: 0.5%;
+}
+
+
