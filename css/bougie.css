@@ -7,52 +7,95 @@
     position: relative;
 }
 
-.galerie-images {
-    margin-top: 2vh;
-    height: 30% ; 
-    width: 90%;
-    background-color: #16141b;
-    opacity: 0.5;
-    /* 👇 IMPORTANT : Rendre le conteneur le référent de positionnement */
-    position: relative; 
-}
-
-/* Positionner toutes les images absolument */
 #doji_ph, #étoile_filante_ph, #étoile_du_matin_ph, #marteau_ph {
     position: absolute;
     height: auto;
-    /* Le 'margin-left' que vous aviez n'est plus pertinent avec position: absolute */
-    /* Vous devez utiliser left/top pour le positionnement */
 }
 
-/* 🥇 1ère image : Doji - Doit être au-dessus */
 #doji_ph {
-    width: 45vh;
-    top: 5%;      /* Ajustez la position verticale */
-    left: 13%;     /* Ajustez la position horizontale */
-    z-index: 4;   /* Le plus grand z-index = le plus en avant */
+    width: 20vw;
+    height: auto;
+    top: 2%;
+    left: 17.5%;
+    z-index: 4;
+    border: 1px solid #6a6666;
+    opacity: 0.5;
 }
 
-/* 🥈 2ème image : Étoile Filante */
 #étoile_filante_ph {
-    width: 50vh;
-    top: 10%;
-    left: 28%;
-    z-index: 2;   
+    width: 20vw;
+    height: auto;
+    top: 6%;
+    left: 31%;
+    z-index: 2;
+    border: 1px solid #6a6666;
+    opacity: 0.5;    
 }
 
-/* 🥉 3ème image : Étoile du Matin */
-#étoile_du_matin_ph {
-    width: 50vh;
-    top: 15%;
-    left: 57%;
-    z-index: 1;   
-}
-
-/* 🏅 4ème image : Marteau - Doit être en dessous */
 #marteau_ph {
-    width: 40vh;
-    top: 45%;
-    left: 42%;
-    z-index: 3;   /* Le plus petit z-index = le plus en arrière */
+    width: 20vw;
+    height: auto;
+    top: 16%;
+    left: 43%;
+    z-index: 3;
+    border: 1px solid #6a6666;
+    opacity: 0.5; 
+}
+
+#étoile_du_matin_ph {
+    width: 20vw;
+    height: auto;
+    top: 8%;
+    left: 59.5%;
+    z-index: 1;
+    border: 1px solid #6a6666;
+    opacity: 0.5;   
+}
+
+
+
+#box_vide {
+    top: 35%;
+    width: 75%;
+    height: 22%;
+    opacity: 0.5;
+    position: absolute; 
+    background-color: #16141b;
+    border: 1px solid #6a6666; 
+}
+
+#doji_exp, #étoile_filante_exp, #étoile_du_matin_exp, #marteau_exp {
+    position: absolute;
+    top: 35%;
+    width: 75%;
+    height: 22%;
+    opacity: 0;
+    background-color: #16141b;
+    border: 1px solid #6a6666;
+    transition: opacity 0.3s ease-in-out; 
+}
+
+#doji_ph:hover, #étoile_filante_ph:hover, #étoile_du_matin_ph:hover, #marteau_ph:hover {
+    opacity: 1;
+    z-index: 10;
+}
+
+/* Lier le survol de l'image Doji à l'affichage de l'explication Doji */
+#doji_ph:hover ~ #doji_exp {
+    opacity: 1;
+}
+
+/* Lier le survol de l'image Étoile Filante à l'affichage de l'explication Étoile Filante */
+#étoile_filante_ph:hover ~ #étoile_filante_exp {
+    opacity: 1;
+}
+
+/* Lier le survol de l'image Étoile du Matin à l'affichage de l'explication Étoile du Matin */
+#étoile_du_matin_ph:hover ~ #étoile_du_matin_exp {
+    opacity: 1;
+}
+
+/* Lier le survol de l'image Marteau à l'affichage de l'explication Marteau */
+#marteau_ph:hover ~ #marteau_exp {
+    opacity: 1;
 }
